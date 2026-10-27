@@ -1,0 +1,8 @@
+name,category,description,offered_by,status,link
+Bioinformatics Core,Analysis services,"Fee-for-service sequencing, proteomics, multi-omics and PK/PD analysis. Start with a consult request in iLab.",CCBB,Existing,https://medicine.iu.edu/research-centers/computational-biology-bioinformatics/bioinformatics-core
+CCBB seminar series,Community,"Talks by leading computational scientists, usually Fridays at 3 pm in HITS.",CCBB,Existing,https://medicine.iu.edu/research-centers/computational-biology-bioinformatics/engagement/calendar
+IU AI initiatives,Guidance,"IU's AI courses, faculty programs and principles for responsible use of generative AI.",Indiana University,Existing,https://ai.iu.edu/initiatives/
+Data access guide,Governance,"Step-by-step guide to requesting data for AI projects, with privacy and IRB checklists.",Office,Proposed,
+Approved AI tools list,Guidance,Which AI tools are approved for research and what data is safe to use with them.,Office,Proposed,
+Pilot funding and grant support,Funding,"Internal pilot awards, external AI funding calls and help building large team proposals.",Office,Proposed,
+Project templates,Templates,"Data management plans, project charters and AI use statements, ready to adapt.",Office,Proposed,

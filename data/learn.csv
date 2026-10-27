@@ -1,0 +1,8 @@
+level,audience,title,description,offered_by,status,link
+Explore,For everyone,GenAI 101,"Free, self-paced course on practical generative AI skills, open to anyone with an IU login.",Indiana University,Existing,https://expand.iu.edu/browse/learningtech/gen-ai/courses/genai-101
+Explore,For everyone,AI Literacy 101 for research teams,"A one-hour session on what AI can and can't do, safe tool use, and protecting patient data.",Office,Proposed,
+Apply,For researchers and staff,Bioinformatics Boot Camp,"Short, free videos on sequencing, RNA-seq, ChIP-seq and proteomics analysis.",CCBB,Existing,https://medicine.iu.edu/research-centers/computational-biology-bioinformatics/education
+Apply,For researchers and staff,INGEN4DS fellowship,One-year mentored genomics research fellowship for IU data science master's students.,CCBB,Existing,https://medicine.iu.edu/research-centers/computational-biology-bioinformatics/education
+Apply,For researchers and staff,Getting your data AI-ready,"Hands-on workshop on cleaning, labeling and documenting data for AI projects.",Office,Proposed,
+Lead,For faculty and leaders,GenAI Faculty Fellows,"A faculty learning community exploring generative AI in teaching, research and service.",Indiana University,Existing,https://ai.iu.edu/initiatives/
+Lead,For faculty and leaders,Responsible AI briefing,"Short briefing on governance, privacy and evaluating AI projects, built on IU's GenAI Task Force principles.",Office,Proposed,https://ai.iu.edu/initiatives/
