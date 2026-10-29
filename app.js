@@ -9,7 +9,7 @@
 
   var TABS = [
     ["home", "Overview"], ["people", "People"], ["events", "Events"], ["learn", "Learn"],
-    ["collaborate", "Collaborate"], ["resources", "Resources"], ["help", "Get help"],
+    ["collaborate", "Collaborate"], ["resources", "Resources"], ["governance", "Governance"], ["help", "Get help"],
     ["impact", "Impact"], ["plan", "Launch plan"]
   ];
 
@@ -95,6 +95,7 @@
       ["learn", "Learn", "AI learning for every role, starting with what IU already offers."],
       ["collaborate", "Collaborate", "Post a need or join a project across departments."],
       ["resources", "Resources", "Analysis cores, guidance, funding and templates."],
+      ["governance", "Governance", "Clear, shared rules for using data and AI safely and responsibly."],
       ["help", "Get help", "Not sure where to start? Describe it and get pointed the right way."]
     ];
     return '<section class="view">' +
@@ -177,6 +178,28 @@
       }).join("") + "</div></section>";
   };
 
+  V.governance = function () {
+    var PR = [
+      ["Patient privacy first", "Every AI project follows HIPAA, IRB and data use agreements from the start."],
+      ["Human oversight", "AI supports decisions. People stay responsible for them."],
+      ["Fair and equitable", "Projects check for bias and consider the patients and communities they affect."],
+      ["Transparent", "Teams document data sources, methods and limits, so results can be trusted and repeated."]
+    ];
+    var G = [
+      ["IU GenAI principles", "Principles and recommendations from IU's GenAI Faculty Task Force for responsible use in research, teaching and operations.", "Existing", "https://ai.iu.edu/initiatives/"],
+      ["Data access process", "One clear path for requesting data for AI projects, with privacy and IRB checklists.", "Proposed", ""],
+      ["Approved AI tools list", "Which AI tools are approved for research, and what kinds of data are safe to use with each.", "Proposed", ""],
+      ["AI project review checklist", "A short checklist teams complete before a pilot: data, privacy, bias, evaluation plan and who is accountable.", "Proposed", ""],
+      ["Safety and governance working group", "Faculty, clinicians, data and compliance staff who meet monthly to update guidance as AI changes.", "Proposed", ""]
+    ];
+    return '<section class="view"><div class="secthead"><span class="eyebrow">Governance</span><h2>Shared rules for safe, responsible AI</h2>' +
+      '<p class="lede">Clear guidance helps people start AI projects with confidence instead of guessing. The office would build on IU\'s existing principles and add practical tools for IUSM teams.</p></div>' +
+      '<div class="principles">' + PR.map(function (p) { return "<div><b>" + p[0] + "</b>" + p[1] + "</div>"; }).join("") + "</div>" +
+      '<div class="grid">' + G.map(function (g) {
+        return '<article class="card"><div class="tags">' + badge(g[2]) + "</div><h3>" + esc(g[0]) + '</h3><p class="muted">' + esc(g[1]) + "</p>" + (g[3] ? '<div class="meta"><span class="muted">Indiana University</span>' + link(g[3], "Visit") + "</div>" : "") + "</article>";
+      }).join("") + "</div></section>";
+  };
+
   var ROUTES = [
     [/data|access|irb|privacy|hipaa|de-?ident|ehr|record/i, "Data access guide", "A coordinator walks you through requesting data and the privacy steps."],
     [/sequenc|rna|omic|proteom|genom|bioinformatic|analy/i, "Bioinformatics Core", "Start with a consult request in iLab. The core handles sequencing, proteomics and multi-omics analysis."],
@@ -216,7 +239,7 @@
   V.plan = function () {
     var P = [
       ["First 30 days", "Listen and map", ["Meet leaders of departments, centers and cores", "Inventory what already exists: courses, cores, seminars, tools", "Ask faculty, staff and trainees what they need", "Start the people directory from public profiles"], "A clear picture of what exists, what people need, and the gaps"],
-      ["Days 31 to 60", "Open the front door", ["Launch the hub with people, events and resources", "Run the first AI literacy session", "Open the help request form with a two-day reply goal", "Publish data access and approved tool guidance"], "One place everyone knows to go"],
+      ["Days 31 to 60", "Open the front door", ["Launch the hub with people, events and resources", "Run the first AI literacy workshop", "Open the help request form with a two-day reply goal", "Publish data access and approved tool guidance", "Form a safety and governance working group"], "One place everyone knows to go"],
       ["Days 61 to 90", "Grow and measure", ["Open the collaboration board", "Support the first pilot funding round", "Start the impact dashboard", "Share a first quarterly report with leadership"], "Programs that run on their own and show results"]
     ];
     var PR = [["Amplify before building", "Link and promote what IU and CCBB already offer, and build new only where there is a gap."], ["One front door", "Every question has one place to go and one person who follows up."], ["Measure from day one", "Each program has a goal and a number, reviewed every quarter."], ["Easy to keep running", "Content lives in a shared spreadsheet, so any staff member can update the hub."]];
